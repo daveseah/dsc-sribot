@@ -1,0 +1,11 @@
+{
+  "main": "app/_start.js",
+  "type": "module",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "prettier": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0"
+  }
+}

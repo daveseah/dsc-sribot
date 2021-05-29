@@ -1,0 +1,15 @@
+#!/bin/bash
+export TMPDIR=/home/username/dscafe_sribot/tmp
+mkdir -p /home/username/dscafe_sribot/tmp
+PIDFILE="/home/username/dscafe_sribot/tmp/node.pid"
+NODE=/home/username/dscafe_sribot/node/bin/node
+
+if [ -e "$PIDFILE" ] && (pgrep -u dsri | grep -x -f $PIDFILE &> /dev/null); then
+  echo "Node.js for dscafe_sribot already running."
+  exit 99
+fi
+
+cd /home/username/dscafe_sribot
+/usr/sbin/daemonize -c /home/username/dscafe_sribot -e ~/logs/apps/dscafe_sribot/node_error.log -o ~/logs/apps/dscafe_sribot/node_output.log -p $PIDFILE $NODE ./sribot/_start.js
+
+echo "Started Node.js for dscafe_sribot."
