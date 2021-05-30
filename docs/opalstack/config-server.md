@@ -1,11 +1,13 @@
 To run this on opalstack as a monitored daemon:
 
-- cloned repo to `dscafe-sribot`
-- edit `start` bash script to run `app/_start.js`
+- in the opalstack application `apps/dcafe-bot`, clone `dscafe-sribot` repo.
+- edit `start` bash script to run `dscafe-sribot/_start.js`, which will invoke `app/_init.mjs`
 
 ## For Interactive Testing
 
-`node sribot/_start`
+From the app-dscafe-bot root directory, run the `_start` command from the cloned repo
+
+`node dscafe-sribot/_start`
 
 ## For Continuous Running
 
