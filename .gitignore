@@ -10,7 +10,12 @@ node/
 
 # app-specific: don't add bot_config with its secrets
 bot-secrets.js
-media/
+# don't store media files
+*.mp3
+*.ogg
+*.jpg
+*.png
+*.gif
 
 # Ignore npm packaging
 node_modules/
