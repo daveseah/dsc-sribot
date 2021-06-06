@@ -10,6 +10,7 @@ node/
 
 # app-specific: don't add bot_config with its secrets
 bot-secrets.js
+media/
 
 # Ignore npm packaging
 node_modules/

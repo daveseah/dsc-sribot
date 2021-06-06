@@ -1,9 +1,13 @@
 {
   "main": "app/_start.js",
   "type": "module",
+  "scripts": {
+    "dev": "node app/_init.mjs"
+  },
   "dependencies": {
     "@discordjs/opus": "^0.5.0",
     "discord.js": "^12.5.3",
+    "ffmpeg-static": "^4.3.0",
     "node-pre-gyp": "^0.17.0",
     "prettier": "^2.3.0",
     "rebuild": "^0.1.2"
